@@ -17,7 +17,7 @@ const Editor = props => {
 Editor.propTypes = {
   markdown: PropTypes.string.isRequired,
   handleChange: PropTypes.func.isRequired,
-  handleClick: PropTypes.func.isRequired
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Editor;

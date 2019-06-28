@@ -10,7 +10,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      markdown: defaultMarkdown
+      markdown: defaultMarkdown,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -18,14 +18,14 @@ class App extends React.Component {
 
   handleChange(event) {
     this.setState({
-      markdown: event.target.value
+      markdown: event.target.value,
     });
   }
 
   handleClick(event) {
     event.preventDefault();
     this.setState({
-      markdown: ''
+      markdown: '',
     });
   }
 
@@ -35,11 +35,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div className="container">
-          <Editor
-            markdown={markdown}
-            handleChange={this.handleChange}
-            handleClick={this.handleClick}
-          />
+          <Editor markdown={markdown} handleChange={this.handleChange} handleClick={this.handleClick} />
           <Preview markdown={markdown} />
         </div>
       </div>
