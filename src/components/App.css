@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo|Mali|Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Heebo|Mali|Source+Code+Pro&display=swap");
 .App {
-  font-family: 'Mali', cursive;
+  font-family: "Mali", cursive;
 }
 .header {
   position: relative;
@@ -57,11 +57,11 @@
   font-size: 1.2rem;
   border: none;
   color: #aaa;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
 .preview {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   background-color: #fef9ff;
 }
 
@@ -88,4 +88,25 @@
 }
 .clr-btn:hover {
   transform: scale(1.05);
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  .editor,
+  .preview {
+    width: 92%;
+  }
+  .header ul {
+    position: relative;
+  }
+  .header h1 {
+    margin: 5px;
+  }
+  .editor-container > h2 {
+    margin: 5px;
+  }
+  .preview-container > h2 {
+    margin: 5px;
+  }
 }
